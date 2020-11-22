@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Mini Game: Find Carrots</title>
+  </head>
+  <body>
+    <!-- 게임 배경화면, 헤더, field(당근, 벌레), 팝업창 구역을 4개로 구분해서
+    <body>
+      배경화면 > 헤더, field
+      팝업창
+    </body>
+      중앙정렬해야하는 것끼리 묶고 배경화면 태그 안에 작성. -->
+    <section>
+      <button class="btn__play active"><i class="fas fa-play"></i></button>
+      <button class="btn__stop"><i class="fas fa-stop"></i></button>
+      <div class="time">00:00</div>
+      <div class="count"></div>
+
+      <!-- create carrots and bugs -->
+      <ul class="carrots">
+      </ul>
+      <ul class="bugs">
+      </ul>
+
+      <!-- modal -->
+      <div class="modal replay">
+        <button class="btn__replay"><i class="fas fa-redo-alt"></i></button>
+        <p>Replay?</p>
+      </div>
+      <div class="modal lost">
+        <button class="btn__replay"><i class="fas fa-redo-alt"></i></button>
+        <p>YOU LOST 😭</p>
+      </div>
+      <div class="modal win">
+        <button class="btn__replay"><i class="fas fa-redo-alt"></i></button>
+        <p>YOU WIN 😄</p>
+      </div>
+    </section>
+  </body>
+</html>
